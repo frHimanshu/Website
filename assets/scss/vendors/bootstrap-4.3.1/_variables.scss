@@ -560,6 +560,8 @@ $custom-switch-width:                           $custom-control-indicator-size *
 $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
 $custom-switch-indicator-size:                  calc(#{$custom-control-indicator-size} - #{$custom-control-indicator-border-width * 4}) !default;
 
+
+
 $custom-select-padding-y:           $input-padding-y !default;
 $custom-select-padding-x:           $input-padding-x !default;
 $custom-select-font-family:         $input-font-family !default;
