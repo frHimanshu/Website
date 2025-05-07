@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Himanshu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        .header-title {
+            text-align: left; /* Aligns the text to the left */
+            margin-left: 20px; /* Adds some spacing from the left edge */
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <!-- Sticky Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="49">
+        <div class="container">
+            <a class="logo" href="index.html">HOME</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header-content container text-center">
+            <h2 class="header-title">My Projects</h2>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container text-left"> <!-- Changed text alignment -->
+            <!-- Aetriks Project -->
+            <div class="project-card">
+                <h2 class="project-title">Aetriks - Keylogger</h2>
+                <p class="project-description">
+                    Aetriks is a keylogger designed for educational purposes. It demonstrates how keystrokes can be securely captured and logged. 
+                    The project includes a detailed contribution guide available on GitHub. Pull Request for contributions are welcome.
+                </p>
+                <a href="https://github.com/frHimanshu/aetriks" class="btn-rounded btn btn-outline-primary mt-2">Repository</a>
+            </div>
+            <br>
+
+            <!-- Aetriks Relay Server -->
+            <div class="project-card">
+                <h2 class="project-title">Aetriks Relay Server</h2>
+                <p class="project-description">
+                    The Aetriks Relay Server is a companion project for Aetriks. It acts as a secure relay server for transmitting logged data to a centralized location. 
+                    Check out the repository for setup instructions and contribution guidelines. Pull Request for contributions are welcome.
+                </p>
+                <a href="https://github.com/frHimanshu/aetriks-relay" class="btn-rounded btn btn-outline-primary mt-2">Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://github.com/frHimanshu/Websitex">Himanshu Garode</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

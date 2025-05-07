@@ -18,6 +18,29 @@
     &-caption {
         flex-grow: 1;
     }
+
+    .about-caption {
+        flex-grow: 1;
+        .about-content {
+            text-align: left;
+            margin: 20px 0;
+            ul.about-list {
+                list-style: none;
+                padding: 0;
+                li {
+                    margin: 10px 0;
+                    font-size: 1.1rem;
+                    display: flex;
+                    align-items: center;
+                    &:before {
+                        content: "✔";
+                        color: var(--primary);
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-down(sm) {
     .about {
