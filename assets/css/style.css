@@ -12617,8 +12617,9 @@ pre .code {
   .about-img-holder {
     max-width: 220px;
     min-width: 100%;
-    width: 100%;
     
+    width: 100%;
+
     margin: auto;
     margin-bottom: 20px;
   }
