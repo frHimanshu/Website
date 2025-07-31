@@ -7,9 +7,90 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <style>
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #695aa6;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .project-title {
+            color: #695aa6;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-tag {
+            background: #f8f9fa;
+            color: #695aa6;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #e9ecef;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .project-status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .status-educational {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
         .header-title {
-            text-align: left; /* Aligns the text to the left */
-            margin-left: 20px; /* Adds some spacing from the left edge */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .section-header h2 {
+            color: #695aa6;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .section-header p {
+            color: #666;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -32,26 +113,35 @@
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-        <div class="container text-left"> <!-- Changed text alignment -->
-            <!-- Aetriks Project -->
-            <div class="project-card">
-                <h2 class="project-title">Aetriks - Keylogger</h2>
-                <p class="project-description">
-                    Aetriks is a keylogger designed for educational purposes. It demonstrates how keystrokes can be securely captured and logged. 
-                    The project includes a detailed contribution guide available on GitHub. Pull Request for contributions are welcome.
-                </p>
-                <a href="https://github.com/frHimanshu/aetriks" class="btn-rounded btn btn-outline-primary mt-2">Repository</a>
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Project</h2>
+                <p>My latest cybersecurity research project</p>
             </div>
-            <br>
-
-            <!-- Aetriks Relay Server -->
+            
+            <!-- Keylogger Project -->
             <div class="project-card">
-                <h2 class="project-title">Aetriks Relay Server</h2>
+                <div class="project-status status-educational">Educational Purpose</div>
+                <h2 class="project-title">Aetriks: Cybersecurity Keylogger</h2>
                 <p class="project-description">
-                    The Aetriks Relay Server is a companion project for Aetriks. It acts as a secure relay server for transmitting logged data to a centralized location. 
-                    Check out the repository for setup instructions and contribution guidelines. Pull Request for contributions are welcome.
+                    A comprehensive cybersecurity research project consisting of a Python keylogger for Windows targets and a Java Spring Boot relay server for Linux hosts. 
+                    This project demonstrates advanced cybersecurity concepts including keystroke capture, data transmission, and stealth operation techniques.
+                    Built for educational and research purposes to understand cybersecurity vulnerabilities and defensive mechanisms.
                 </p>
-                <a href="https://github.com/frHimanshu/aetriks-relay" class="btn-rounded btn btn-outline-primary mt-2">Repository</a>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Cybersecurity</span>
+                    <span class="tech-tag">Windows API</span>
+                    <span class="tech-tag">Linux Server</span>
+                    <span class="tech-tag">HTTP API</span>
+                    <span class="tech-tag">Stealth Operations</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/frHimanshu/Keylogger" class="btn-rounded btn btn-outline-primary">View Repository</a>
+                    <a href="https://github.com/frHimanshu/Keylogger/blob/main/README.md" class="btn-rounded btn btn-outline-secondary">Documentation</a>
+                </div>
             </div>
         </div>
     </section>
@@ -59,15 +149,12 @@
     <!-- footer -->
     <div class="container">
         <footer class="footer">
-            <p class="mb-0">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://github.com/frHimanshu/Websitex">Himanshu Garode</a>
-            </p>
+            <p class="mb-0">&copy; 2025 <a href="https://github.com/frHimanshu">Himanshu</a> - All Rights Reserved</p>
         </footer>
     </div>
 
     <!-- Core Scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
